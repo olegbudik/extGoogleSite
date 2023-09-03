@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/main.css';
 
-const urlExtension = 'https://chrome.google.com/webstore/detail/linkedbuddy/dlcnbdemimiedcapkncdfmmnidobcpmi'
+export const urlExtension = 'https://chrome.google.com/webstore/detail/linkedbuddy/dlcnbdemimiedcapkncdfmmnidobcpmi'
 
 export default function MainTitle() {
 

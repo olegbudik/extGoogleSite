@@ -1,6 +1,6 @@
 .header{
+    width: 1140px;
     color: var(--text-color) ;
-    width: 100%;
     height: rem;
     margin-top: -2rem;
     position: fixed;
@@ -10,7 +10,7 @@
 .header__container{
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 /* -----------LOGO ------------ */
@@ -32,6 +32,7 @@
 }
 /* ----------NAVBAR ----------- */
 .navbar__container{
+    margin: 0rem 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,8 +41,9 @@
     margin: 0rem 2rem;
     font-weight: 600;
 }
-.navbar__item:hover {
+.navbar__item:hover a{
     color: var(--hover-link-color);
+
 }
 /* ------- BUTTON ----------- */
 .header__btn {

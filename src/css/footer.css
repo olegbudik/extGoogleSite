@@ -1,0 +1,47 @@
+.footer{
+    width: 100%;
+    height: auto;
+}
+.footer__container{
+    background-color: var(--main-bg-color);
+}
+.footer__block{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-evenly;
+    margin: 3rem auto;
+
+}
+.footer__block__item__title{
+    margin: 2rem 0rem;
+    font-weight: 600;
+    text-align: center;
+}
+.footer__block__item__link{
+    margin: 0.5rem 0rem;
+    text-align: center;
+}
+.footer__block__item__link:hover a{
+    color: var(--hover-link-color);
+    font-weight: 400;
+}
+.footer__copyright{
+    margin: 0rem 5rem;
+}
+/* -------- CallAction ----------- */
+.call__action__container {
+    width: 60rem;
+    height: 25rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 1px solid var(--header-btn-bg-color);
+    border-radius: 5rem;
+}
+.call__action__title, .call__action__title h1{
+    margin: 3rem auto;;
+}
+.call__action__title p{
+    width: 35rem;
+    margin: 3rem auto;
+    margin-bottom: 5rem;
+}

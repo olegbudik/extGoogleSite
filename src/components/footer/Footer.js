@@ -8,15 +8,11 @@ export default function Footer() {
     const dataFooter = [
         {
             title: 'Product',
-            text: ['Features','Pricing', 'Support']
+            text: ['Features','FAQ', 'Support']
         },
         {
             title: 'Legal',
             text: ['Terms of Service','Privacy Policy', 'Privacy Law Compliance']
-        },
-        {
-            title: 'Other',
-            text: ['Blog','FAQ']
         },
     ]
 
@@ -31,8 +27,8 @@ export default function Footer() {
                                             <div className='footer__block__item__title'>
                                                 {item.title}
                                             </div>
-                                                {item.text.map((el) => {
-                                                    return  <div className='footer__block__item__link'>
+                                                {item.text.map((el, indx) => {
+                                                    return  <div className='footer__block__item__link' key={indx}>
                                                                 <a href='#header'>{el}</a>
                                                             </div>
                                                 })}

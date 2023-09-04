@@ -7,7 +7,7 @@ export default function MainTitle() {
 
     return(
             <div className='main__title'>
-                <h1> LinkedBuddy - extension for LinkedIn audience building </h1>
+                <h1> <span>LinkedBuddy</span> - extension for LinkedIn audience building </h1>
                 <div className='main__title__text'>
                     <p> Enhance your LinkedIn outreach effortlessly with our AI-powered Chrome Extension</p>
                 </div>

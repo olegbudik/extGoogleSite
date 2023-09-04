@@ -38,7 +38,10 @@
     border-radius: 5rem;
 }
 .call__action__title, .call__action__title h1{
-    margin: 3rem auto;;
+    margin: 3rem auto;
+}
+.call__action__title h1{
+    color: var(--text-color);
 }
 .call__action__title p{
     width: 35rem;

@@ -3,6 +3,8 @@ import '../../css/main.css';
 import MainTitle from './MainTitle';
 import MainMedia from './MainMedia';
 import MainBlock from './MainBlock';
+import MainTestimonials from './MainTestimonials';
+import MainFaQ from './MainFaQ';
 
 
 export default function Main() {
@@ -13,6 +15,8 @@ export default function Main() {
                 <MainTitle/>
                 <MainMedia/>
                 <MainBlock/>
+                <MainTestimonials/>
+                <MainFaQ/>
             </div>
         </div>
     )

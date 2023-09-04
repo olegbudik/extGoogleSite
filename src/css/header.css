@@ -1,14 +1,14 @@
 .header{
     width: 1140px;
     color: var(--text-color) ;
-    height: rem;
-    margin-top: -2rem;
+    height: 6rem;
     position: fixed;
-    background-color: var(--body-bg-color);
+    top:0;
     z-index: 100;
+    backdrop-filter: blur(8px);
 }
 .header__container{
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,15 +41,16 @@
     margin: 0rem 2rem;
     font-weight: 600;
 }
+.navbar__item a{
+    color: var(--text-color) ;
+}
 .navbar__item:hover a{
     color: var(--hover-link-color);
-
 }
 /* ------- BUTTON ----------- */
 .header__btn {
     min-width: 150px;
     height: 40px;
-    color: var(--header-btn-text-color);
     padding: 8px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -60,8 +61,12 @@
     border: 2px solid var(--header-btn-bg-color);
     background: var(--header-btn-bg-color);
 }
+.header__btn a{
+    color: var(--header-btn-text-color);
+}
 .header__btn:hover {
     background: var(--header-btn-text-color);
+}
+.header__btn:hover a{
     color: var(--header-btn-bg-color)
 }
-

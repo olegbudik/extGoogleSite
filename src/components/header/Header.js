@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../css/header.css';
-import Logo from '../../assets/image/icon_site.jpg';
+import Logo from '../../assets/image/icon_site.png';
 import NavBar from './NavBar';
-
+import { urlExtension } from '../main/MainTitle';
 
 export default function Header() {
 
@@ -21,7 +21,7 @@ export default function Header() {
                 </div>
                 <NavBar/>
                 <div className='header__btn'>
-                    <p>Get Started</p>
+                <a href={urlExtension}>Get started</a>
                 </div>
             </div>
         </div>

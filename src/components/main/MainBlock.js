@@ -29,7 +29,7 @@ export default function MainBlock() {
     ]
 
     return(
-        <div className='main__block__container'>
+        <div className='main__block__container' id='main_block'>
             {dataMainBlock.map((item, index) => {
                 return index % 2 ?  <div className='main__block' key={index}>
                                         <div className='main__block__title'>

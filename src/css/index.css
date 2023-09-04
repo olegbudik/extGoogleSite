@@ -2,10 +2,13 @@
 
 :root{
     --body-bg-color: #ffffff;
-    --text-color: #000000;
-    --logo-title: #003380;
-    --hover-link-color: #004cbf;
-    --header-btn-bg-color: #003380;
+    --text-color: #795a39;
+    /* --logo-title: #003380; */
+    --logo-title: #795a39;
+    /* --hover-link-color: #004cbf; */
+    --hover-link-color: #c8a076;
+    /* --header-btn-bg-color: #003380; */
+    --header-btn-bg-color: #c8a076;
     --header-btn-text-color: #ffffff;
     --main-bg-color: #f5f5f5;
 }

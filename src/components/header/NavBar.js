@@ -9,12 +9,12 @@ export default function NavBar() {
             host: 'name_host'
         },
         { 
-            title:'Pricing',
-            host: 'name_host'
+            title:'Support',
+            host: '#main_block'
         },
         { 
-            title: 'Blog',
-            host: 'name_host'
+            title: 'FAQ',
+            host: '#faq'
         }
     ]
 

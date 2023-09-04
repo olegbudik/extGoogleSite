@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/main.css';
-import Demo from '../../assets/image/screenshot1.png'
+import Demo from '../../assets/video/Chrome Extension.mp4'
 
 
 export default function MainMedia() {
@@ -8,7 +8,9 @@ export default function MainMedia() {
     return(
             <div className='main__title'>
                 <div className='main__media__media'>
-                    <img src={Demo} className='main__media__img' alt='Demo' />
+                    <video controls autoPlay muted className="main__media__video">
+                        <source src={Demo} type='video/mp4'/>
+                    </video>
                     <div className='main__media__btn'>
                         <p>Live Demo</p>
                     </div>

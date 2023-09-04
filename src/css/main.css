@@ -191,10 +191,6 @@
     padding: 1rem 3rem;
     border-radius: 1rem;
 }
-.faq__item:hover {
-    box-shadow:  3px 3px 30px #9a9a9a97,
-                -3px -3px 30px #9a9a9a97;
-}
 .faq__item h3{
     margin: 1rem 0rem;
     position: relative;

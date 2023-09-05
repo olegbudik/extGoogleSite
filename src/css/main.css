@@ -23,7 +23,6 @@
     font-size: 1.2rem;
     font-weight: 300;
     color: var(--text-color);
-
 }
 .main__title__btn {
     min-width: 200px;
@@ -58,7 +57,6 @@
 .main__media__video{
     width: 40rem;
     height: 25rem;
-    border-radius: 15px;
     border-radius: 15px;
     box-shadow:  4px 4px 60px #c9c9c9,
             -4px -4px 60px #c9c9c9;
@@ -216,4 +214,117 @@ details[open] summary::after{
     content: '-';
     font-size: 2rem;
     font-weight: 400;
+}
+
+/* ----- Adaptation ------ */
+@media (max-width: 768px){
+    .main{
+        width:100vw;
+    }
+    .main__container{
+        width: 100%;
+    }
+    .main__title {
+        width: 31rem;  
+        margin: 14rem auto;
+        font-size: 1.4rem;
+    }
+    .main__title__text {
+        width: 30rem;
+        text-align: center;
+        margin: 3rem auto;
+    }
+    .main__media__video{
+        width: 35rem;
+        height: 22rem;
+    }
+}
+@media (max-width: 414.98px){
+    .main__title{
+        width: 18rem;
+        margin: 22rem auto 2rem auto;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .main__title span{
+        color: var(--text-color);
+    }
+    .main__title__text {
+        width: 18rem;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: var(--text-color);
+    }
+    .main__media__video{
+        margin: -16rem auto 2rem;
+        width: 18rem;
+        height: 12rem;
+    }
+    .main__block{
+        width: 20rem;
+        height: auto;
+        flex-direction: column;
+        text-align: justify;
+        font-size: 0.8rem;
+        margin: 1rem auto;
+    }
+    .main__block__img img{
+        margin: 1rem auto;
+        width: 14rem;
+        height: 14rem;
+    }
+    .main__testimonials__block {
+        width: 1200%;
+    }
+    .main__testimonials__title{
+        width: 18rem;
+        font-size: 0.8rem;
+    }
+    .main__testimonials__item{
+        width: 16rem;
+        height: auto;
+        background-color: var(--header-btn-text-color);
+        margin: 0.1rem 0.1rem;
+        padding: 1rem .5rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+        border: 1px solid var(--header-btn-bg-color);
+    }
+    .item__rating{
+        color: orange;
+        margin: 0.5rem 1rem;
+    }
+    .item__text{
+        margin: 0.5rem;
+        text-align: justify;
+    }
+    .faq__title{
+        width: 18rem;
+        height: auto;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .faq__title h1{
+        font-size: 1rem;
+    }
+    .faq__block{
+        width: 20rem;
+        height: auto;
+        margin: 1rem auto;
+        font-size: 0.8rem;
+    }
+    summary::after {
+        position: absolute;
+        top: -0.7rem;
+        right: -2rem;
+        content: '+';
+    }
+    details[open] summary::after{
+        content: '-';
+    }
+    .faq__item__title{
+        font-size: 1rem;
+    }
 }

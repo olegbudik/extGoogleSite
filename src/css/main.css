@@ -57,7 +57,7 @@
     padding: 4rem 0rem ;
     width: 100%;
     height: auto;
-    margin: 1rem auto -2rem auto;
+    margin: 1rem auto;
     text-align: center;
 }
 .main__media__media{
@@ -111,7 +111,7 @@
     width: 96%;
     height: auto;
     display: flex;
-    text-align: justify;
+    text-align: left;
     align-items: center;
     justify-content: space-between;
     font-size: 1.2rem;
@@ -154,7 +154,7 @@
     color: var(--text-color);
 }
 .main__testimonials__block {
-    width: 600%;
+    width: 800%;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -167,12 +167,12 @@
     animation-play-state: paused;
 }
 .main__testimonials__item{
-    width: 35%;
+    width: 55%;
     height: auto;
     background-color: var(--header-btn-text-color);
     margin: 0.1%;
     padding: 0.5% 0.2%;
-    border-radius: 1rem;
+    border-radius: 10px;
     border: 1px solid var(--header-btn-bg-color);
 }
 .item__rating{
@@ -181,7 +181,7 @@
 }
 .item__text{
     margin: 1rem 0.5rem;
-    text-align: justify;
+    text-align: left;
 }
 @keyframes marquee-div {
     0% {
@@ -197,8 +197,12 @@
     background-color: var(--body-bg-color);
     padding: 3rem 0rem;
 }
+.faq__container{
+    width: 98%;
+    height: auto;
+    margin: 0rem auto;
+}
 .faq__title{
-    /* width: 38rem; */
     width: 60%;
     height: auto;
     margin: 3rem auto;
@@ -209,15 +213,15 @@
     margin: 2rem 0rem;
 }
 .faq__block{
-    width: 80%;
-    height: auto;
+    width: 98%;
     margin: 2% auto;
 }
 .faq__item{
-    background-color: var(--main-bg-color);
-    margin: 2% 0rem;
+    width: 90%;
+    height: auto;
+    margin: 0% auto;
     padding: 1% 6%;
-    border-radius: 1rem;
+    border-top: 1px solid var(--text-color);
 }
 .faq__item h3{
     width: 80%;
@@ -229,7 +233,6 @@
 }
 .faq__item__title{
     width: 90%;
-    text-align: justify;
     font-size: 1.2rem;
     padding: 3%;
 }
@@ -251,6 +254,12 @@ details[open] summary::after{
 }
 
 /* !-----------Adaptation ------------- */
+
+@media (max-width:889px) {
+    .main__media__btn:hover{
+        transform: scale(1.6);
+    }
+}
 @media (max-width: 800px){
     .main__title {
         width: 26rem;
@@ -264,16 +273,10 @@ details[open] summary::after{
         font-size: 1rem;
         margin: 5% 1rem;
     }
-    
-}
-@media (max-width:889px) {
-    .main__media__btn:hover{
-        transform: scale(1.6);
-    }
 }
 @media (max-width: 684px){
     .main__title{
-        margin: 16rem auto -2rem auto;
+        margin: 11rem auto -2rem auto;
     }
     .main__media__btn{
         width: 18%;
@@ -289,7 +292,6 @@ details[open] summary::after{
     .main__block{
         flex-direction: column;
         margin: 3% auto;
-        text-align: justify;
     }
     .main__block__img{
         width: 80%;
@@ -302,12 +304,15 @@ details[open] summary::after{
         height: 60%;
         margin: 4% auto;
     }
+    .main__testimonials__block{
+        width: 1200%;
+    }
     .main__testimonials__title{
         font-size: 0.9rem;
     }
     .main__testimonials__item{
-        width: 45%;
-        font-size: 0.9rem;
+        width: 65%;
+        font-size: 1rem;
     }
     .faq__item__title{
         font-size: 0.9rem;
@@ -315,7 +320,7 @@ details[open] summary::after{
 }
 @media (max-width: 420px){
     .main__title{
-        margin: 18rem auto -2rem auto;
+        margin: 14rem auto -2rem auto;
     }
     .main__title {
         width: 18rem;
@@ -345,8 +350,15 @@ details[open] summary::after{
         padding: 2%;
         font-size: 0.9rem;
     }
+    .main__testimonials__block{
+        width: 1400%;
+    }
     .main__testimonials__title{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+    }
+    .main__testimonials__item{
+        width: 65%;
+        font-size: 1rem;
     }
     .faq__item h3{
         font-size: 1rem;

@@ -1,16 +1,16 @@
 .footer{
     width: 100%;
     height: auto;
+    margin: 0rem auto;
 }
 .footer__container{
-    width: 100%;
     background-color: var(--main-bg-color);
 }
 .footer__block{
     display: flex;
     align-items: first baseline;
     justify-content: space-evenly;
-    margin: 3rem auto;
+    margin: 8% auto;
 }
 .footer__block__item__title{
     margin: 2rem 0rem;
@@ -30,52 +30,82 @@
 }
 /* -------- CallAction ----------- */
 .call__action__container {
-    width: 60rem;
-    height: 25rem;
-    margin: 2rem auto;
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
     text-align: center;
     border: 1px solid var(--header-btn-bg-color);
-    border-radius: 5rem;
+    border-radius: 25px;
 }
 .call__action__title, .call__action__title h1{
     margin: 3rem auto;
 }
 .call__action__title h1{
+    width: 60%;
     color: var(--text-color);
 }
 .call__action__title p{
-    width: 35rem;
-    margin: 3rem auto;
-    margin-bottom: 5rem;
+    width: 60%;
+    margin: 5% auto;
+    margin-bottom: 5%;
+}
+.call__action__btn {
+    min-width: 30%;
+    height: 12%;
+    padding: 13px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 2rem;
+    margin-bottom: 8%;
+    border: 2px solid var(--header-btn-bg-color);
+    background: var(--header-btn-bg-color);
+}
+.call__action__btn a{
+    color: var(--header-btn-text-color);
+
+}
+.call__action__btn:hover {
+    background: var(--header-btn-text-color);
+}
+.call__action__btn:hover a{
+    color: var(--header-btn-bg-color)
 }
 
-/* ----- Adaptation ------ */
-@media (max-width: 768px){
-    .call__action__container {
-        width: 40rem;
+/*! ----- Adaptation ------ */
+@media (max-width: 849px){
+    .call__action__title h1{
+        font-size: 1.5rem;
     }
 }
-@media (max-width: 414.98px){
-    .footer__container{
-        width: 100%;
+@media (max-width: 684px){
+    .call__action__title h1{
+        font-size: 1.3rem;
+    }
+    .call__action__title{
+        font-size: 1rem;
     }
     .footer__block{
-        width: 100%;
         flex-direction: column;
-    }
-    .call__action__container {
-        width: 20rem;
-    }
-    .call__action__title p{
-        width: 15rem;
-        margin: 1rem auto;
-        margin-bottom: 1rem;
-    }
-    .footer__copyright{
-        width: 20rem;
-        margin: 0rem;
+        margin: 5% auto;
     }
     .footer__block__item{
-        margin: 1rem auto;
+        margin: 2% auto;
+    }
+}
+@media (max-width: 420px){
+    .call__action__title h1{
+        font-size: 1.1rem;
+    }
+    .call__action__title{
+        font-size: 0.9rem;
+    }
+    .footer__copyright{
+        margin: 0;
+        text-align: center;
+        font-size: 0.8rem;
     }
 }

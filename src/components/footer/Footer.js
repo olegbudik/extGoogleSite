@@ -20,7 +20,6 @@ export default function Footer() {
             <div className='footer'>
                 <CallAction/>
                 <div className='footer__container'>
-                    
                     <div className='footer__block'>
                             {dataFooter.map((item, index) => {
                                 return  <div className='footer__block__item' key={index}>
@@ -36,7 +35,7 @@ export default function Footer() {
                             })}
                     </div>
                     <div className='footer__copyright'>
-                        <p>&copy; Copyright 2023・All rights reserved.</p>
+                        <p>&copy; Copyright 2023・All rights reserved</p>
                     </div>
                 </div>
             </div>

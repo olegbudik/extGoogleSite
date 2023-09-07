@@ -31,7 +31,7 @@ export default function MainFaQ() {
                     <div className='faq__block'>
                         <div className='faq__block__left'>
                             {dataFAQ.map((item, index) => {
-                                if (index % 2)  return  <div className='faq__item' onClick={() => closeFAQItem(index)} key={index}>
+                                if (index % 2 === 0) {return   <div className='faq__item' onClick={() => closeFAQItem(index)} key={index}>
                                                             <details >
                                                                 <summary>
                                                                     <h3>{item.question} 
@@ -42,12 +42,15 @@ export default function MainFaQ() {
                                                                 </div>
                                                             </details>
                                                         </div>
+                                                } else {
+                                                    return null
+                                                }
                                 } 
                             )}
                         </div>
                         <div className='faq__block__right'>
                             {dataFAQ.map((item, index) => {
-                                if (index % 2 !== 0)  return  <div className='faq__item' onClick={() => closeFAQItem(index)} key={index}>
+                                if (index % 2 !== 0)  {return  <div className='faq__item' onClick={() => closeFAQItem(index)} key={index}>
                                                             <details >
                                                                 <summary>
                                                                     <h3>{item.question} 
@@ -58,6 +61,7 @@ export default function MainFaQ() {
                                                                 </div>
                                                             </details>
                                                         </div>
+                                } else {return null}
                                 } 
                             )}
                         </div>

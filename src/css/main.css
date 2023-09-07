@@ -228,7 +228,6 @@
     display: flex;
     flex-direction: column;
 }
-
 .faq__item{
     display: block;
     width: 100%;
@@ -283,6 +282,17 @@ details[open] summary::after{
         font-size: 4rem;
     }
 }
+@media (max-width:834px) {
+    .faq__block{
+        flex-direction: column;
+    }
+    .faq__block__left,
+    .faq__block__right{
+        width: 90%;
+        margin: 0% auto;
+    }
+}
+
 @media (max-width: 800px){
     .main__title {
         width: 26rem;
@@ -296,9 +306,7 @@ details[open] summary::after{
         font-size: 1rem;
         margin: 5% 1rem;
     }
-    .faq__block__block{
-        flex-direction: column;
-    }
+
     .faq__item{
         width: 80%;
     }

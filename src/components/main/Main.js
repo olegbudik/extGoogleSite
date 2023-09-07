@@ -5,6 +5,7 @@ import MainMedia from './MainMedia';
 import MainBlock from './MainBlock';
 import MainTestimonials from './MainTestimonials';
 import MainFaQ from './MainFaQ';
+import MainTypeAnimation from './MainTypeAnimation';
 
 
 export default function Main() {
@@ -14,6 +15,7 @@ export default function Main() {
             <div className='main__container'>
                 <MainTitle/>
                 <MainMedia/>
+                <MainTypeAnimation/>
                 <MainBlock/>
                 <MainTestimonials/>
                 <MainFaQ/>

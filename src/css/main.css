@@ -11,17 +11,18 @@
 /* ----------MainTitle ---------- */
 .main__title{
     padding: 4rem 0rem ;
-    width: 40rem;
+    width: 70%;
     height: auto;
     margin: 12rem auto -2rem auto;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 .main__title span{
     color: var(--text-color);
+    font-size: 5rem;
 }
 .main__title__text {
-    width: 40rem;
+    width: 80%;
     text-align: center;
     margin: 3rem auto;
     font-size: 1.2rem;
@@ -217,16 +218,20 @@
     width: 100%;
     height: auto;
     margin: 2% auto;
+    display:flex;
+    justify-content: space-around;
 }
-.faq__block__block{
-    width: 98%;
-    margin: 0rem auto;
+.faq__block__left,
+.faq__block__right{
+    width: 49%;
+    height: auto;
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
+
 .faq__item{
-    width: 48%;
+    display: block;
+    width: 100%;
     height: auto;
     margin:0.5% auto;
     padding: 1% 6%;
@@ -274,6 +279,9 @@ details[open] summary::after{
     .main__media__btn:hover{
         transform: scale(1.6);
     }
+    .main__title span{
+        font-size: 4rem;
+    }
 }
 @media (max-width: 800px){
     .main__title {
@@ -298,6 +306,9 @@ details[open] summary::after{
 @media (max-width: 684px){
     .main__title{
         margin: 11rem auto -2rem auto;
+    }
+    .main__title span{
+        font-size: 2.5rem;
     }
     .main__media__btn{
         width: 18%;
@@ -346,6 +357,9 @@ details[open] summary::after{
     .main__title {
         width: 18rem;
         font-size: 0.8rem;
+    }
+    .main__title span{
+        font-size: 1.8rem;
     }
     .main__title__text {
         width: 18rem;

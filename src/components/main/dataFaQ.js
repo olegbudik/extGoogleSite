@@ -8,10 +8,6 @@ export const dataFAQ = [
         answer: 'Enhance your LinkedIn outreach effortlessly with our AI-powered Chrome Extension. Tailored for B2B sales and networking, our extension offers streamlined engagement for professionals seeking impactful connections.',
     },
     {
-        question: 'Niche audience building?',
-        answer: 'This is extension for Google Chrome',
-    },
-    {
         question: 'What is you?',
         answer: "Optimize your time with our extension's efficient features. Discover the latest industry updates, create engaging posts, and respond promptly to comments using advanced generative AI.",
     },

@@ -2,8 +2,25 @@ import React from 'react';
 import '../../css/main.css';
 import { dataFAQ } from './dataFaQ';
 
+
 export default function MainFaQ() {
 
+    const closeFAQItem = (key) => {
+        const details = document.querySelectorAll("details");
+        // добавить к каждому клику события клика
+        [...details].forEach((targetDetail) => {
+        targetDetail.addEventListener("click", _ => {
+            // закрывать всех кроме кликнутого
+            details.forEach((detail) => {
+                if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+
+    }
+    
     return(
             <div className='faq' id='faq'>
                 <div className='faq__container'>
@@ -12,19 +29,22 @@ export default function MainFaQ() {
                         <p>Don’t see an answer to your question below? Contact our friendly support team for assistance</p>
                     </div>
                     <div className='faq__block'>
-                        {dataFAQ.map((item, index) => {
-                            return  <div className='faq__item' key={index}>
-                                        <details>
-                                            <summary>
-                                                <h3>{item.question} 
-                                                </h3>
-                                            </summary>
-                                            <div className='faq__item__title'>
-                                                <p>{item.answer}</p>
-                                            </div>
-                                        </details>
-                                    </div>
-                        } )}
+                        <div className='faq__block__block'>
+                            {dataFAQ.map((item, index) => {
+                                return  <div className='faq__item' onClick={() => closeFAQItem(index)} key={index}>
+                                            <details >
+                                                <summary>
+                                                    <h3>{item.question} 
+                                                    </h3>
+                                                </summary>
+                                                <div className='faq__item__title'>
+                                                    <p>{item.answer}</p>
+                                                </div>
+                                            </details>
+                                        </div>
+                                } 
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

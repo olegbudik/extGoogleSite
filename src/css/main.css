@@ -194,11 +194,12 @@
 /* --------MainFAQ ---------- */
 .faq{
     width: 100%;
+    height: auto;
     background-color: var(--body-bg-color);
     padding: 3rem 0rem;
 }
 .faq__container{
-    width: 98%;
+    width: 100%;
     height: auto;
     margin: 0rem auto;
 }
@@ -213,15 +214,27 @@
     margin: 2rem 0rem;
 }
 .faq__block{
-    width: 98%;
+    width: 100%;
+    height: auto;
     margin: 2% auto;
 }
+.faq__block__block{
+    width: 98%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 .faq__item{
-    width: 90%;
+    width: 48%;
     height: auto;
-    margin: 0% auto;
+    margin:0.5% auto;
     padding: 1% 6%;
-    border-top: 1px solid var(--text-color);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    border-radius: 16px;
+    border: 1px solid var(--header-btn-bg-color);
+    /* background-color: var(--main-bg-color); */
 }
 .faq__item h3{
     width: 80%;
@@ -230,6 +243,9 @@
 }
 .faq__item:hover summary{
     cursor: pointer;
+}
+.faq__item p{
+    font-size: 1rem;
 }
 .faq__item__title{
     width: 90%;
@@ -242,7 +258,7 @@ details {
 summary::after {
     position: absolute;
     top: -0.5rem;
-    right: 1%;
+    right: -2%;
     content: '+';
     font-size: 2rem;
     font-weight: 400;
@@ -254,7 +270,6 @@ details[open] summary::after{
 }
 
 /* !-----------Adaptation ------------- */
-
 @media (max-width:889px) {
     .main__media__btn:hover{
         transform: scale(1.6);
@@ -272,6 +287,12 @@ details[open] summary::after{
     .main__block{
         font-size: 1rem;
         margin: 5% 1rem;
+    }
+    .faq__block__block{
+        flex-direction: column;
+    }
+    .faq__item{
+        width: 80%;
     }
 }
 @media (max-width: 684px){

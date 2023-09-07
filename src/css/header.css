@@ -86,15 +86,17 @@
         flex-wrap: wrap;
     }
 }
+@media (max-width: 834px){
+    .navbar__container{
+        display: none;
+    }
+}
 @media (max-width: 684px){
     .header {
         height: 8rem;
     }
     .header__container{
         justify-content: space-around;
-    }
-    .navbar__container{
-        display: none;
     }
     .header__logo a{
     width: 8rem;

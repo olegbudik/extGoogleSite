@@ -149,7 +149,7 @@
 .main__block__img img{
     margin: 5% auto;
     width: 90%;
-    aspect-ratio: 1/.8;
+    height: 80%;
     border-radius: 15px;
 }
 .main__block__title{

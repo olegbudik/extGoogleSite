@@ -7,7 +7,7 @@
     left: 0;
     z-index: 1000;
     backdrop-filter: blur(8px);
-    background:linear-gradient(180deg,var(--main-bg-color) 60%,hsla(0,0%,100%,0)) ;
+    /* background:linear-gradient(180deg,var(--main-bg-color) 60%,hsla(0,0%,100%,0)) ; */
 }
 .header__container{
     padding: 2rem 2%;
@@ -57,12 +57,12 @@
 .header__btn {
     width: 10rem;
     height: 3rem;
-    padding: 0.6rem 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
-    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 2rem;
     border: 2px solid var(--header-btn-bg-color);
     background: var(--header-btn-bg-color);
@@ -114,19 +114,8 @@
     .header__btn {
         width: 10rem;
         height: 3rem;
-        padding: 0.6rem;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 2rem;
-        border: 2px solid var(--header-btn-bg-color);
-        background: var(--header-btn-bg-color);
     }
 }
-
 @media (max-width: 420px){
     .header {
         height: 7rem;

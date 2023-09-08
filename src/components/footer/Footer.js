@@ -7,10 +7,6 @@ export default function Footer() {
 
     const dataFooter = [
         {
-            title: 'Product',
-            text: ['Features','FAQ', 'Support']
-        },
-        {
             title: 'Legal',
             text: ['Terms of Service','Privacy Policy', 'Privacy Law Compliance']
         },

@@ -31,13 +31,13 @@ export default function MainBlock() {
 
     const imgAnimation = {
         hidden: {
-            y: 200,
+            y: 100,
             opacity: 0,
         },
-        visible: custom => ({
+        visible: {
             y: 0,
             opacity: 1,
-        }),
+        },
     }
 
     return(

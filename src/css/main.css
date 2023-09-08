@@ -430,7 +430,6 @@ details[open] summary::after{
         width: 30%;
         font-weight: 600;
         font-size: 2rem;
-        color: #0351ce;
     }
 }
 @media (max-width: 565px){
@@ -456,7 +455,6 @@ details[open] summary::after{
         width: 30%;
         font-weight: 600;
         font-size: 1.5rem;
-        color: #0351ce;
     }
 }
 @media (max-width: 420px){
@@ -477,7 +475,11 @@ details[open] summary::after{
     .main__block,
     .main__block__reverse{
         font-size: 1rem;
-        margin: 2% 1rem;
+        margin: 2% auto;
+    }
+    .main__block__title{
+        padding: 2% auto;
+        font-size: 0.8rem;
     }
     .main__media{
         margin: 1rem auto -40%;
@@ -493,10 +495,6 @@ details[open] summary::after{
     .main__media__text{
         width: 90%;
         font-size: 0.8rem;
-    }
-    .main__block__title{
-        padding: 2%;
-        font-size: 0.9rem;
     }
     .main__testimonials__block{
         width: 1400%;

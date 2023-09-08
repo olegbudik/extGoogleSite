@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/main.css';
+import {motion} from 'framer-motion'
 
 
 export default function MainBlock() {
@@ -28,29 +29,56 @@ export default function MainBlock() {
         }
     ]
 
+    const imgAnimation = {
+        hidden: {
+            y: 200,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
+            opacity: 1,
+        }),
+    }
+
     return(
-        <div className='main__block__container' id='main_block'>
-            {dataMainBlock.map((item, index) => {
-                return index % 2 ?  <div className='main__block' key={index}>
-                                        <div className='main__block__title'>
-                                            <h3>{item.title}</h3>
-                                            <p>{item.content}</p>
+        <motion.section>
+            <div className='main__block__container' id='main_block'>
+                {dataMainBlock.map((item, index) => {
+                    return index % 2 ?  <div className='main__block' key={index}>
+                                            <div className='main__block__title'>
+                                                <h3>{item.title}</h3>
+                                                <p>{item.content}</p>
+                                            </div>
+                                            <motion.div 
+                                                initial="hidden"
+                                                whileInView="visible"
+                                                viewport={{ once: true }}
+                                                transition={{ease: 'easeOut', duration: 2}}
+                                                variants={imgAnimation} 
+                                                className='main__block__img'
+                                                >
+                                                {item.image}
+                                            </motion.div>
                                         </div>
-                                        <div className='main__block__img'>
-                                            {item.image}
+                                    :   <div className='main__block__reverse' key={index}>
+                                            <motion.div 
+                                                initial="hidden"
+                                                whileInView="visible"
+                                                viewport={{ once: true }}
+                                                transition={{ease: 'easeOut', duration: 2}}
+                                                variants={imgAnimation} 
+                                                className='main__block__img'
+                                                >
+                                                {item.image}
+                                            </motion.div>
+                                            <div className='main__block__title'>
+                                                <h3>{item.title}</h3>
+                                                <p>{item.content}</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                :   <div className='main__block__reverse' key={index}>
-                                        <div className='main__block__img'>
-                                        {item.image}
-                                        </div>
-                                        <div className='main__block__title'>
-                                            <h3>{item.title}</h3>
-                                            <p>{item.content}</p>
-                                        </div>
-                                    </div>
-                })
-            }
-        </div>
+                    })
+                }
+            </div>
+        </motion.section>
     )
 }

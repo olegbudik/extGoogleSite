@@ -2,11 +2,13 @@
     width: 100%;
     height: auto;
     margin: -10% auto 2rem auto;
+    display: flex;
+    justify-content: center;
     padding-top: 3%;
-    background: linear-gradient(180deg, rgba(235, 181, 33, 0.491) 6%, rgba(255, 255, 255, 0) 30%);
 }
 .main__container{
-    width: 100%;
+    background: linear-gradient(180deg, rgba(235, 181, 33, 0.491) 6%, rgba(255, 255, 255, 0) 30%);
+    width: 100vw;
     margin: 0rem auto;
 }
 /* ----------MainTitle ---------- */
@@ -297,6 +299,11 @@ details[open] summary::after{
 }
 
 /* !-----------Adaptation ------------- */
+@media (min-width:1024){
+    .main__container{
+        width: 100%;
+    }
+}
 @media (max-width:889px) {
     .main__media__btn:hover{
         transform: scale(1.6);

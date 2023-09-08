@@ -4,8 +4,6 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function MainTypeAnimation() {
 
-    // const [textColor, setTextColor] = useState('green');
-
 
     return(
             <div className='main__type__animation'>
@@ -13,21 +11,21 @@ export default function MainTypeAnimation() {
                     <h1 className='main__type__animation__title'>LinkedBuddy</h1>
                     <div className='main__type__animation__text__block'>
                         <h1>We help you to improve 
-                        <TypeAnimation 
+                        <span><TypeAnimation 
                             sequence={[
                                 ' Sales',
-                                1200,
+                                1500,
                                 ' Engagement',
-                                1200,
+                                1500,
                                 ' LinkedIn Audience',
-                                1200,
+                                1500,
                             ]}
                             className='main__type__animation__text'
                             wrapper='span'
-                            speed={60}
+                            speed={10}
                             cursor={true}
                             repeat={Infinity}
-                        />
+                        /></span>
                         </h1>
                     </div>
                 </div>

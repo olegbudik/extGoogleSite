@@ -40,7 +40,7 @@ export default function MainBlock() {
                                             {item.image}
                                         </div>
                                     </div>
-                                :   <div className='main__block' key={index}>
+                                :   <div className='main__block__reverse' key={index}>
                                         <div className='main__block__img'>
                                         {item.image}
                                         </div>

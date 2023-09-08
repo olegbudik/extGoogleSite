@@ -1,5 +1,9 @@
 .wrapper {
     position: relative;
-    max-width: 1024px;
-    width: 100%;
+    /* max-width: 1024px; */
+    width: 100vw;
+    display: flex;
+    margin: 0 auto;;
+    flex-direction: column;
+    justify-items: center;
 }

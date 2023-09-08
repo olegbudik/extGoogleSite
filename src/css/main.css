@@ -1,12 +1,16 @@
 .main{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
     margin: -10% auto 2rem auto;
     padding-top: 3%;
     background: linear-gradient(180deg, rgba(235, 181, 33, 0.491) 6%, rgba(255, 255, 255, 0) 30%);
 }
 .main__container{
     width: 100%;
+    max-width: 1024px;
+    
     margin: 0rem auto;
 }
 /* ----------MainTitle ---------- */
@@ -140,7 +144,6 @@
     justify-content: space-around;
     font-size: 1.2rem;
 }
-
 .main__block__img {
     margin: 1% auto;
     width: 50%;
@@ -167,6 +170,7 @@
     width: 100%;
     height: auto;
     padding: 2% 0rem ;
+    background: var(--main-bg-color);
 }
 .main__testimonials__container{
     overflow: hidden;

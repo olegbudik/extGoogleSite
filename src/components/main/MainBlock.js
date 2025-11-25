@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../css/main.css';
 import {motion} from 'framer-motion'
+import linkedinImg from '../../assets/image/linkedin.png';
+import linkedIn1Img from '../../assets/image/linkedIn1.jpg';
+import googleImg from '../../assets/image/google.jpg';
 
 
 export default function MainBlock() {
@@ -9,23 +12,22 @@ export default function MainBlock() {
         {
             title: 'To whom?',
             content: "Niche audience building. Optimize your time with our extension's efficient features. Discover the latest industry updates, create engaging posts, and respond promptly to comments using advanced generative AI.",
-            // image: '../../assets/image/linkedin.png',
-            image: <img src={require('../../assets/image/linkedin.png')} alt='pic'/>
+            image: <img src={linkedinImg} alt='pic'/>
         },
         {
             title: 'For whom?',
             content: 'Tailored for B2B sales and networking, our extension offers streamlined engagement for professionals seeking impactful connections.',
-            image: <img src={require('../../assets/image/linkedIn1.jpg')} alt='pic'/>
+            image: <img src={linkedIn1Img} alt='pic'/>
         },
         {
             title: 'For what?',
             content: 'Enhance your LinkedIn outreach effortlessly with our AI-powered Chrome Extension.',
-            image: <img src={require('../../assets/image/google.jpg')} alt='pic'/>
+            image: <img src={googleImg} alt='pic'/>
         },
         {
             title: 'Technologies',
             content: 'Experience seamless LinkedIn interactions with our AI technology. Craft personalized comments, and stay engaged with your network—all in seconds.',
-            image: <img src={require('../../assets/image/linkedin.png')} alt='pic'/>
+            image: <img src={linkedinImg} alt='pic'/>
         }
     ]
 

@@ -21,6 +21,11 @@
     "preview": "vite preview",
     "start": "vite"
   },
+  "resolutions": {
+    "esbuild": "^0.25.0",
+    "lodash": "^4.17.23",
+    "rollup": "^4.59.0"
+  },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@vitejs/plugin-react": "^4.2.1",

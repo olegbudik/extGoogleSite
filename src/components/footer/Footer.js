@@ -4,6 +4,7 @@ import CallAction from './CallAction';
 
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
 
     const dataFooter = [
         {
@@ -31,7 +32,7 @@ export default function Footer() {
                             })}
                     </div>
                     <div className='footer__copyright'>
-                        <p>&copy; Copyright 2023・All rights reserved</p>
+                        <p>&copy; Copyright {currentYear}・All rights reserved</p>
                     </div>
                 </div>
             </div>
